@@ -1,0 +1,214 @@
+/* Made by the use of ChatGPT this is an improved version of my index.css file which is renamed to index[old].css as i was not in the mood to style it */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f7f9fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    background-color: #003f5c;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.left p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+ul li {
+    margin-left: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+ul li:hover {
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffa600;
+}
+
+main {
+    max-width: 900px;
+    margin: 5rem auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+main div {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+    margin-bottom: 3rem;
+    text-align: left;
+}
+
+div.title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #003f5c;
+}
+
+div.desc {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+div button {
+    padding: 0.6rem 2.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    margin-right: 1rem;
+}
+
+button.update {
+    background-color: #00b894;
+    color: white;
+    border: 2px solid #00b894;
+}
+
+button.update:hover {
+    background-color: transparent;
+    color: #00b894;
+}
+
+button.del {
+    background-color: #d63031;
+    color: white;
+    border: 2px solid #d63031;
+}
+
+button.del:hover {
+    background-color: transparent;
+    color: #d63031;
+}
+
+button.add {
+    background-color: #0984e3;
+    color: white;
+    border: 2px solid #0984e3;
+    padding: 0.7rem 3rem;
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    margin-top: 2rem;
+}
+
+button.add:hover {
+    background-color: transparent;
+    color: #0984e3;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 10%;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    display: none;
+    margin: 2rem auto;
+    max-width: 600px;
+}
+
+form div input,
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+textarea {
+    height: 6rem;
+    resize: vertical;
+}
+
+#submit {
+    width: 50%;
+    padding: 0.8rem;
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 1rem auto;
+    display: block;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#submit:hover {
+    background-color: transparent;
+    color: #6c5ce7;
+    border: 2px solid #6c5ce7;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #003f5c;
+    color: white;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    margin-top: 5rem;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav .right{
+        display:none;
+    }
+
+    ul {
+        margin-top: 1rem;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer p {
+        margin: 0.5rem 0;
+    }
+
+    main {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    div.right {
+        display: none;
+    }
+}
