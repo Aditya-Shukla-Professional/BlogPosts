@@ -1,0 +1,3 @@
+Hey like in this project i have used mysql to create seperate table for each user and like fill there data in that but a
+better approach would have been to like only create one users table and then keep the data for each user in that only in 
+seperate column... but as i had already done with this approach i didn't change it futher...
