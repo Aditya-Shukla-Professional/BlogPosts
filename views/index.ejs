@@ -1,0 +1,29 @@
+<%- include("partials/header.ejs") %>
+<!-- the below part adds divs to show the data on the sql table -->
+<main>
+    <% blogPosts.forEach((post,index) => { %>
+        <div class="blog-post" data-db-id="<%= post.id %>">
+            <div class="title"><%= post.title %></div>
+            <div class="desc"><%= post.description %></div>
+            <button class="update" id="update">Update</button>
+            <button class="del" id="del">Delete</button>
+        </div>
+    <% }); %>
+    <button class="add" id="add">Add More</button>
+</main>
+<!-- the below part has form to submit the data that the user enters to save in the sql database -->
+<div class="value">
+    <form action="/submit" method="post">
+        <input type="hidden" name="update_id" id="updateId">
+        <div>
+            <label for="title">Title: </label>
+            <input type="text" name="title" id="title">
+        </div>
+        <div>
+            <label for="desc">Description: </label>
+            <textarea id="desc" name="desc"></textarea>
+        </div>
+        <button type="submit" id="submit" class="add">Submit</button>
+    </form>
+</div>
+<%- include("partials/footer.ejs") %>
