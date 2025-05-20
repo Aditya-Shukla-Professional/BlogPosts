@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Blog Post Website</title>
 </head>
 <body>
 
@@ -29,6 +30,17 @@
 
   <h2 id="getting-started">🛠️ Getting Started</h2>
   <p>To run this project locally:</p>
+
+  <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <strong>📢 Important:</strong> This is a <em>student project</em> hosted using free-tier services:
+    <ul>
+      <li>📦 Database: <a href="https://www.freesqldatabase.com" target="_blank">FreeSQLDatabase.com</a></li>
+      <li>🌐 Server Hosting: <a href="https://www.render.com" target="_blank">Render.com</a></li>
+    </ul>
+    Due to the nature of free hosting, the live demo links may not always work or could take a few moments to wake up.
+  </div>
+
+  <br>
 
   <ol>
     <li><strong>Fork & Clone the Repository</strong>
