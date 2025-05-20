@@ -85,9 +85,6 @@ For any suggestions or questions, feel free to reach out via [GitHub issues](htt
 
 * * *
 
+### Connect with me:
 
-**🔍 Click to view a Markdown version**
-
-\# 📝 Blog Post Website
-
-This is a simple \*\*Blog Post Website\*\* built using Node.js, Express, MySQL, and EJS...
+[![aditya shukla](https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg)](https://www.linkedin.com/in/aditya-shukla-8b3494341/)
