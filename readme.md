@@ -1,115 +1,98 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-</head>
-<body>
+📝 Blog Post Website
+====================
 
-  <h1>📝 Blog Post Website</h1>
+This is a simple **Blog Post Website** built using Node.js, Express, MySQL, and EJS. Users can **sign up, log in, create blog posts, update them, and delete them** as needed.
 
-  <p>This is a simple <strong>Blog Post Website</strong> built using Node.js, Express, MySQL, and EJS. Users can 
-  <strong>sign up, log in, create blog posts, update them, and delete them</strong> as needed.</p>
+* * *
 
-  <hr>
+🚀 Features
+-----------
 
-  <h2 id="features">🚀 Features</h2>
-  <ul>
-    <li>User authentication (signup & login)</li>
-    <li>Create, update, and delete blog posts</li>
-    <li>Backend powered by <strong>MySQL</strong> and <strong>Express.js</strong></li>
-    <li>Frontend rendered with <strong>EJS templates</strong></li>
-  </ul>
+*   User authentication (signup & login)
+*   Create, update, and delete blog posts
+*   Backend powered by **MySQL** and **Express.js**
+*   Frontend rendered with **EJS templates**
 
-  <h2 id="database-design">⚠️ Note on Database Design</h2>
-  <p>In this project, each user currently has a <strong>separate table</strong> for their blog posts. 
-  While this approach works, a <strong>better design</strong> would have been to create a single <code>posts</code> table and differentiate users' posts using a <code>user_id</code> foreign key.
-  This change was considered, but the current implementation was kept for continuity.</p>
+⚠️ Note on Database Design
+--------------------------
 
-  <hr>
+In this project, each user currently has a **separate table** for their blog posts. While this approach works, a **better design** would have been to create a single `posts` table and differentiate users' posts using a `user_id` foreign key. This change was considered, but the current implementation was kept for continuity.
 
-  <h2 id="getting-started">🛠️ Getting Started</h2>
-  <p>To run this project locally:</p>
+* * *
 
-  <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
-    <strong>📢 Important:</strong> This is a <em>student project</em> hosted using free-tier services:
-    <ul>
-      <li>📦 Database: <a href="https://www.freesqldatabase.com" target="_blank">FreeSQLDatabase.com</a></li>
-      <li>🌐 Server Hosting: <a href="https://www.render.com" target="_blank">Render.com</a></li>
-    </ul>
-    Due to the nature of free hosting, the live demo links may not always work or could take a few moments to wake up.
-  </div>
+🛠️ Getting Started
+-------------------
 
-  <br>
+To run this project locally:
 
-  <ol>
-    <li><strong>Fork & Clone the Repository</strong>
-      <pre><code>git clone https://github.com/your-username/blog-post-website.git
-cd blog-post-website</code></pre>
-    </li>
+**📢 Important:** This is a _student project_ hosted using free-tier services:
 
-    <li><strong>Install Node.js and NPM</strong><br>
-    If you don't already have them: <a href="https://nodejs.org/en/download" target="_blank">Download Node.js (includes npm)</a></li>
+*   📦 Database: [FreeSQLDatabase.com](https://www.freesqldatabase.com)
+*   🌐 Server Hosting: [Render.com](https://www.render.com)
 
-    <li><strong>Install Dependencies</strong>
-      <pre><code>npm install</code></pre>
-    </li>
+Due to the nature of free hosting, the live demo links may not always work or could take a few moments to wake up.
 
-    <li><strong>Set Up MySQL Database</strong>
-      <ul>
-        <li>Create a new MySQL database</li>
-        <li>Update your DB credentials in the <code>index.js</code> file (or wherever your connection is defined)</li>
-      </ul>
-    </li>
+  
 
-    <li><strong>Run the Server</strong>
-      <pre><code>node index.js</code></pre>
-      Or for easier development with auto-reloading:
-      <pre><code>npx nodemon index.js</code></pre>
-    </li>
-  </ol>
+1.  **Fork & Clone the Repository**
+    
+        git clone https://github.com/your-username/blog-post-website.git
+        cd blog-post-website
+    
+2.  **Install Node.js and NPM**  
+    If you don't already have them: [Download Node.js (includes npm)](https://nodejs.org/en/download)
+3.  **Install Dependencies**
+    
+        npm install
+    
+4.  **Set Up MySQL Database**
+    *   Create a new MySQL database
+    *   Update your DB credentials in the `index.js` file (or wherever your connection is defined)
+5.  **Run the Server**
+    
+        node index.js
+    
+    Or for easier development with auto-reloading:
+    
+        npx nodemon index.js
+    
 
-  <hr>
+* * *
 
-  <h2 id="structure">📂 Folder Structure</h2>
-  <pre>
+📂 Folder Structure
+-------------------
+
 ├── views/          # EJS templates
 ├── public/         # Static assets (CSS, JS, images)
 ├── index.js        # Main server file
 ├── package.json
 └── README.md
-  </pre>
+  
 
-  <h2 id="future">📌 Future Improvements</h2>
-  <ul>
-    <li>Use a single posts table with <code>user_id</code> as a foreign key</li>
-    <li>Add password hashing and session management</li>
-    <li>Implement input validation and sanitization</li>
-    <li>Add support for comments and likes</li>
-  </ul>
+📌 Future Improvements
+----------------------
 
-  <h2 id="contact">📧 Contact</h2>
-  <p>For any suggestions or questions, feel free to reach out via 
-  <a href="https://github.com/your-username/blog-post-website/issues" target="_blank">GitHub issues</a> or submit a pull request.</p>
+*   Use a single posts table with `user_id` as a foreign key
+*   Add password hashing and session management
+*   Implement input validation and sanitization
+*   Add support for comments and likes
 
-  <hr>
+📧 Contact
+----------
 
-  <h3>🔗 Optional Enhancements</h3>
-  <ul>
-    <li>Add project badges using <a href="https://shields.io" target="_blank">shields.io</a></li>
-    <li>Include screenshots or demo video</li>
-    <li>Add a <a href="#live-demo">Live Demo</a> section if deployed</li>
-    <li>Link your social media or portfolio</li>
-  </ul>
+For any suggestions or questions, feel free to reach out via [GitHub issues](https://github.com/your-username/blog-post-website/issues) or submit a pull request.
 
-  <details>
-    <summary><strong>🔍 Click to view a Markdown version</strong></summary>
-    <pre>
-# 📝 Blog Post Website
+* * *
 
-This is a simple **Blog Post Website** built using Node.js, Express, MySQL, and EJS...
-<!-- truncated for brevity -->
-    </pre>
-  </details>
+### 🔗 Optional Enhancements
 
-</body>
-</html>
+*   Add project badges using [shields.io](https://shields.io)
+*   Include screenshots or demo video
+*   Add a [Live Demo](#live-demo) section if deployed
+*   Link your social media or portfolio
+
+**🔍 Click to view a Markdown version**
+
+\# 📝 Blog Post Website
+
+This is a simple \*\*Blog Post Website\*\* built using Node.js, Express, MySQL, and EJS...
