@@ -36,8 +36,8 @@ Due to the nature of free hosting, the live demo links may not always work or co
 
 1.  **Fork & Clone the Repository**
     
-        git clone https://github.com/your-username/blog-post-website.git
-        cd blog-post-website
+        git clone https://github.com/Aditya-Shukla-Professional/BlogPosts.git
+        cd BlogPosts
     
 2.  **Install Node.js and NPM**  
     If you don't already have them: [Download Node.js (includes npm)](https://nodejs.org/en/download)
@@ -47,7 +47,7 @@ Due to the nature of free hosting, the live demo links may not always work or co
     
 4.  **Set Up MySQL Database**
     *   Create a new MySQL database
-    *   Update your DB credentials in the `index.js` file (or wherever your connection is defined)
+    *   Update your DB credentials in the `index.js` file
 5.  **Run the Server**
     
         node index.js
@@ -76,20 +76,15 @@ Due to the nature of free hosting, the live demo links may not always work or co
 *   Add password hashing and session management
 *   Implement input validation and sanitization
 *   Add support for comments and likes
+*   Add encryption for sensitive data such as passwords and user IDs — currently there is no encryption applied, which is a security risk.
 
 📧 Contact
 ----------
 
-For any suggestions or questions, feel free to reach out via [GitHub issues](https://github.com/your-username/blog-post-website/issues) or submit a pull request.
+For any suggestions or questions, feel free to reach out via [GitHub issues](https://github.com/Aditya-Shukla-Professional/BlogPosts/issues) or submit a pull request.
 
 * * *
 
-### 🔗 Optional Enhancements
-
-*   Add project badges using [shields.io](https://shields.io)
-*   Include screenshots or demo video
-*   Add a [Live Demo](#live-demo) section if deployed
-*   Link your social media or portfolio
 
 **🔍 Click to view a Markdown version**
 
